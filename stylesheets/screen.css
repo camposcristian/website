@@ -182,10 +182,11 @@ div.back div.container-sm {
 /* line 127, ../sass/screen.scss */
 div.back div.container-lg {
   float: left;
+  height: 100%;
   width: 60%;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 div.back figure.logo-white {
   position: absolute;
   top: 50%;
@@ -195,7 +196,7 @@ div.back figure.logo-white {
   display: block;
   margin: -60px -60px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 div.back figure.logo-white:before, div.back figure.logo-white:after {
   display: block;
   content: '';
@@ -203,7 +204,7 @@ div.back figure.logo-white:before, div.back figure.logo-white:after {
   border-style: solid;
   border-color: transparent;
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 div.back figure.logo-white:before {
   top: 0;
   left: 0;
@@ -212,32 +213,32 @@ div.back figure.logo-white:before {
   border-left-color: white;
   z-index: 2;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 div.back figure.logo-white:after {
   bottom: 0;
   right: 0;
   border-width: 56px;
   border-right-color: white;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 div.back a {
   color: white;
   text-decoration: none;
   display: block;
 }
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 div.back a:hover {
   text-decoration: underline;
 }
-/* line 177, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 div.back ul.social {
   font-size: 1.25rem;
 }
-/* line 180, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 div.back ul.social li {
   margin-top: 1rem;
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 div.back ul.social li:first-child {
   margin-top: 2rem;
 }
