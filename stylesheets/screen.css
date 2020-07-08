@@ -1,0 +1,243 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+/* line 5, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 17, ../sass/screen.scss */
+body {
+  background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+  background-position: center center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 23, ../sass/screen.scss */
+div.business-card {
+  height: 427px;
+  width: 320px;
+  margin-left: -160px;
+  margin-top: -213.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 1000;
+}
+/* line 35, ../sass/screen.scss */
+div.business-card:hover .flipper, div.business-card.hover .flipper {
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+/* line 40, ../sass/screen.scss */
+div.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: center 160px;
+}
+
+/* line 48, ../sass/screen.scss */
+div.front, div.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 427px;
+  width: 320px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+/* line 60, ../sass/screen.scss */
+div.front {
+  background-color: white;
+  z-index: 0;
+}
+/* line 64, ../sass/screen.scss */
+div.front:before, div.front:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 160px;
+  border-style: solid;
+  border-color: transparent;
+}
+/* line 75, ../sass/screen.scss */
+div.front:before {
+  border-top-color: #288FBD;
+  border-left-color: #288FBD;
+  z-index: 2;
+}
+/* line 81, ../sass/screen.scss */
+div.front:after {
+  border-top-color: #005D8C;
+  border-right-color: #005D8C;
+}
+/* line 86, ../sass/screen.scss */
+div.front div.name {
+  position: absolute;
+  bottom: 8.5px;
+  left: 85px;
+}
+/* line 91, ../sass/screen.scss */
+div.front div.name span {
+  display: block;
+  font-size: 40px;
+  line-height: 45px;
+}
+/* line 97, ../sass/screen.scss */
+div.front div.name span.first {
+  color: #005D8C;
+}
+/* line 101, ../sass/screen.scss */
+div.front div.name span.last {
+  color: #288FBD;
+}
+/* line 105, ../sass/screen.scss */
+div.front div.name span.title {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+/* line 112, ../sass/screen.scss */
+div.back {
+  background-color: #005D8C;
+  color: white;
+  width: 427px;
+  height: 320px;
+  box-sizing: border-box;
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+/* line 120, ../sass/screen.scss */
+div.back div.container-sm {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+/* line 127, ../sass/screen.scss */
+div.back div.container-lg {
+  float: left;
+  width: 60%;
+  margin-top: 2rem;
+}
+/* line 133, ../sass/screen.scss */
+div.back figure.logo-white {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: -60px -60px;
+}
+/* line 142, ../sass/screen.scss */
+div.back figure.logo-white:before, div.back figure.logo-white:after {
+  display: block;
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+/* line 150, ../sass/screen.scss */
+div.back figure.logo-white:before {
+  top: 0;
+  left: 0;
+  border-width: 60px;
+  border-top-color: white;
+  border-left-color: white;
+  z-index: 2;
+}
+/* line 159, ../sass/screen.scss */
+div.back figure.logo-white:after {
+  bottom: 0;
+  right: 0;
+  border-width: 56px;
+  border-right-color: white;
+}
+/* line 167, ../sass/screen.scss */
+div.back a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+/* line 172, ../sass/screen.scss */
+div.back a:hover {
+  text-decoration: underline;
+}
+/* line 177, ../sass/screen.scss */
+div.back ul.social {
+  font-size: 1.25rem;
+}
+/* line 180, ../sass/screen.scss */
+div.back ul.social li {
+  margin-top: 1rem;
+}
+/* line 183, ../sass/screen.scss */
+div.back ul.social li:first-child {
+  margin-top: 2rem;
+}
